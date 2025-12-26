@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOアプリ（完全版＋ドラッグ）</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TODOアプリ（完全版＋ドラッグ）</h1>
+
+        <!-- タスク追加フォーム -->
+        <div class="form">
+            <input type="text" id="taskInput" placeholder="タスク内容">
+            <input type="date" id="dueDate">
+            <select id="category">
+                <option value="すべて">すべて</option>
+                <option value="仕事">仕事</option>
+                <option value="プライベート">プライベート</option>
+                <option value="その他">その他</option>
+            </select>
+            <button id="addBtn">追加</button>
+        </div>
+
+        <!-- カテゴリーフィルタ -->
+        <div class="filter">
+            <label>カテゴリーでフィルタ:
+                <select id="filterCategory">
+                    <option value="すべて">すべて</option>
+                    <option value="仕事">仕事</option>
+                    <option value="プライベート">プライベート</option>
+                    <option value="その他">その他</option>
+                </select>
+            </label>
+        </div>
+
+        <ul id="taskList"></ul>
+        <p id="stats"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
